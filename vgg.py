@@ -28,7 +28,7 @@ class VGG(nn.Module):
     def __init__(
         self,
         features: nn.Module,
-        num_classes: int = 1000,
+        num_classes: int = 10,
         init_weights: bool = True
     ) -> None:
         super(VGG, self).__init__()
