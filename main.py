@@ -146,7 +146,7 @@ def main():
             'epoch': epoch + 1,
             'state_dict': model.state_dict(),
             'best_prec1': best_prec1,
-        }, is_best, filename=os.path.join(args.save_dir, 'checkpoint_{}.tar'.format(epoch)))
+        }, is_best, filename=os.path.join(args.save_dir, 'checkpoint.tar'))
 
 
 def train(train_loader, model, criterion, optimizer, epoch):
