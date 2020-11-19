@@ -1,7 +1,7 @@
 # Source: https://github.com/pytorch/vision/blob/master/torchvision/models/vgg.py#L2
 import torch
 import torch.nn as nn
-from .utils import load_state_dict_from_url
+from utils import load_state_dict_from_url
 from typing import Union, List, Dict, Any, cast
 
 
