@@ -5,6 +5,7 @@ from torch.hub import load_state_dict_from_url
 from typing import Union, List, Dict, Any, cast
 
 
+
 __all__ = [
     'VGG', 'vgg11', 'vgg11_bn', 'vgg13', 'vgg13_bn', 'vgg16', 'vgg16_bn',
     'vgg19_bn', 'vgg19',
@@ -28,7 +29,7 @@ class VGG(nn.Module):
     def __init__(
         self,
         features: nn.Module,
-        num_classes: int = 10,
+        num_classes: int = 1000,
         init_weights: bool = True
     ) -> None:
         super(VGG, self).__init__()
