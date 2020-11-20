@@ -27,11 +27,11 @@ parser.add_argument('--arch', '-a', metavar='ARCH', default='vgg19',
                     ' (default: vgg19)')
 parser.add_argument('-j', '--workers', default=4, type=int, metavar='N',
                     help='number of data loading workers (default: 4)')
-parser.add_argument('--epochs', default=300, type=int, metavar='N',
+parser.add_argument('--epochs', default=200, type=int, metavar='N',
                     help='number of total epochs to run')
 parser.add_argument('--start-epoch', default=0, type=int, metavar='N',
                     help='manual epoch number (useful on restarts)')
-parser.add_argument('-b', '--batch-size', default=128, type=int,
+parser.add_argument('-b', '--batch-size', default=32, type=int,
                     metavar='N', help='mini-batch size (default: 128)')
 parser.add_argument('--lr', '--learning-rate', default=0.05, type=float,
                     metavar='LR', help='initial learning rate')
@@ -73,7 +73,7 @@ def main():
     model.classifier[6].out_features = 10
     # freeze convolution weights
     for param in model.features.parameters():
-      param.requires_grad = False
+      param.requires_grad = True
 
     model.features = torch.nn.DataParallel(model.features)
     if args.cpu:
