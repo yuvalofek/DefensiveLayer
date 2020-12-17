@@ -6,7 +6,7 @@ The code is divided into four files and is structured as follows:
 
 * GetImagenet.ipynb is used to extract an ImageNet test dataset composed of two classes: bikes and ships.
 
-* FoolBoxOnImageNet.ipynb is used to apply FGSM and DeepFool on the ImageNet dataset. 
+* FoolBoxOnImageNet.ipynb is used to create FGSM and DeepFool attacks based on the ImageNet dataset. 
 
 * Testing.ipynb is used to insert the wavelet denoising layers into the model and test the modifed models on the various test datasets.
 
