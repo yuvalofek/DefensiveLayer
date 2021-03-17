@@ -2,13 +2,19 @@
 
 This repository is the Python implementation of the "DefenseLayer", an intra-model defense layer approach to securing deep learning image classifiers against adversarial attacks. The paper describing our approach, titled "Defending Against Adversarial Attacks One Layer at a Time", is included in this repository.
 
-The code is divided into four files and is structured as follows:
 
-* GetImagenet.ipynb is used to extract an ImageNet test dataset composed of two classes: bikes and ships.
+## Provided Code Files:
 
-* FoolBoxOnImageNet.ipynb is used to create FGSM and DeepFool attacks based on the ImageNet dataset. 
+### GetImagenet.ipynb
+- Extracts an ImageNet test dataset composed of two classes: bikes and ships.
+### FoolBoxOnImageNet.ipynb
+ - Creates FGSM and DeepFool attacks based on the ImageNet dataset. 
+### Testing.ipynb 
+ - Inserts the wavelet denoising layers into the model
+ - Tests the modifed models on the various test datasets
+### Graphing.ipynb 
+- Generates the graphs included in the paper
 
-* Testing.ipynb is used to insert the wavelet denoising layers into the model and test the modifed models on the various test datasets.
 
-* Graphing.ipynb is used to generate the graphs included in the paper.
-
+# Contributers: 
+- jkurian49 - (https://github.com/jkurian49)
