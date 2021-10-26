@@ -4,6 +4,8 @@ This repository is the Python implementation of the "DefenseLayer", an intra-mod
 
 Project presentation can be found: [here](https://www.slideshare.net/secret/KU6C3Q9xmioRiU)
 
+![](Combined_singlelayer.png)
+
 ## Provided Code Files:
 
 ### GetImagenet.ipynb
